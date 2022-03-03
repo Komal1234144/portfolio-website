@@ -1,0 +1,53 @@
+@import '../../__base.scss';
+
+.skills{
+   width : 100%;
+   padding : 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-bottom: 20px; 
+  
+&__header{
+  text-align: center;
+  font-size: clamp(25px , 3vw , 35px);
+  font-weight: bold;
+  word-spacing: 2px;
+  margin-bottom: clamp(2px , 3vw , 40px);
+  margin-top: -40px;
+  .skillsIcon{
+      font-size : clamp(40px , 6vw , 100px) !important;
+  }
+}
+
+.skillsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+  .skill{
+     width : 35%;
+     color : $red;
+     margin: 10px;
+     padding : 10px;
+     display: flex;
+     align-items: center;
+     font-size: clamp(18px , 1.8vw , 28px);
+     background-color: rgb(243, 243, 243);
+ 
+    .verified{
+      margin-right: 10px;
+    } 
+ } 
+}
+
+@media(max-width : 780px){
+  .skills{
+     padding : 0px;
+    .skill{
+      width : 42%;
+      
+    }
+  }
+}

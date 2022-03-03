@@ -1,0 +1,10 @@
+$red : #b40421;
+
+@mixin showbar($max-width){
+    @if $max-width=780px{
+   display : block }
+
+   @else{
+       display : none;
+   }
+}
