@@ -49,7 +49,7 @@ function handleSubmit(e) {
   return (
     <div className='contact' id="contact">
        <div className='contact__left'>
-         <img src="./assets/shake.svg" alt="handshake-picture"/>
+         <img src="./assets/shake.svg" alt="handshake"/>
          <div>
             <span><a className='contactIcons' href='https://github.com/Komal1234144'><GitHub className='icon'/></a></span>
             <span><a className='contactIcons' href='mailto:tolambia.komal5@gmail.com'><MailOutline className='icon'/></a></span>
