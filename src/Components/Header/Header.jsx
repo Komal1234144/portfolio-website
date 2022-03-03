@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './__header.scss';
-import {Link , animateScroll as scroll} from 'react-scroll';
+import {Link} from 'react-scroll';
 import {Menu , Close} from '@mui/icons-material';
 import { useContext } from 'react';
 import {Context} from '../../Context';

@@ -13,7 +13,7 @@ const Projects = () => {
       
         {projects.map((project)=>{
          return <div key={project.id} className='projects__project'>
-                <img className='image' src={project.gif}/>
+                <img className='image' src={project.gif} alt="project-gifs"/>
 
             <div className='details'>
                <h3>{project.title}</h3>
@@ -25,8 +25,8 @@ const Projects = () => {
                  })}
                </ul>
                <span>
-                 <button className='github'><GitHub/><a href={project.github} target='_blank'>github</a></button>
-                 <button className='website'><Language/><a href={project.website} target='_blank'>website</a></button>
+                 <button className='github'><GitHub/><a href={project.github} target='_blank' rel="noreferrer">github</a></button>
+                 <button className='website'><Language/><a href={project.website} target='_blank' rel="noreferrer">website</a></button>
                </span>
             </div>
          </div>
