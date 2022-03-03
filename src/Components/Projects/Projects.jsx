@@ -25,8 +25,8 @@ const Projects = () => {
                  })}
                </ul>
                <span>
-                 <button className='github'><GitHub/><a href={project.github} target='_blank' rel="noreferrer">github</a></button>
-                 <button className='website'><Language/><a href={project.website} target='_blank' rel="noreferrer">website</a></button>
+                 {project.github && <button className='github'><GitHub/><a href={project.github} target='_blank' rel="noreferrer">github</a></button>}
+                 {project.website && <button className='website'><Language/><a href={project.website} target='_blank' rel="noreferrer">website</a></button>}
                </span>
             </div>
          </div>
