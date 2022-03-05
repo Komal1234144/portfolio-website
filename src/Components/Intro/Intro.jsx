@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useRef } from 'react'
 import {init} from 'ityped';
+import {Link} from 'react-scroll';
 import './__intro.scss'
 const Intro = () => {
 
@@ -24,7 +25,7 @@ useEffect(()=>{
           Hi There! I'm Komal Tolambia <br/>
           <span className="intro__info_skill" ref={textRef}></span>
         </p>
-        <button>Resume</button>
+        <button><Link to="contact" spy={true} smooth={true} offset={-80}>Contact Me</Link></button>
       </div>
     </div>
   )
